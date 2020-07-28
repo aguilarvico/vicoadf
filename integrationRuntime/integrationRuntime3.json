@@ -14,7 +14,7 @@
 				"licenseType": "LicenseIncluded",
 				"packageStores": [
 					{
-						"name": "VicPkg",
+						"name": "MomPkg",
 						"packageStoreLinkedService": {
 							"referenceName": "linkedService1",
 							"type": "LinkedServiceReference"
