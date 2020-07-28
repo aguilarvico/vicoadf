@@ -1,0 +1,27 @@
+{
+	"name": "integrationRuntime3",
+	"properties": {
+		"type": "Managed",
+		"typeProperties": {
+			"computeProperties": {
+				"location": "East US 2",
+				"nodeSize": "Standard_D1_v2",
+				"numberOfNodes": 1,
+				"maxParallelExecutionsPerNode": 1
+			},
+			"ssisProperties": {
+				"edition": "Standard",
+				"licenseType": "LicenseIncluded",
+				"packageStores": [
+					{
+						"name": "VicPkg",
+						"packageStoreLinkedService": {
+							"referenceName": "linkedService1",
+							"type": "LinkedServiceReference"
+						}
+					}
+				]
+			}
+		}
+	}
+}
