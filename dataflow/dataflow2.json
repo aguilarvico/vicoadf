@@ -26,7 +26,7 @@
 					"name": "Select1"
 				}
 			],
-			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tformat: 'excel',\n\tcontainer: 'vicocontainer2020',\n\tfileName: 'miLista.xlsx',\n\tsheetName: 'Sheet1',\n\tfirstRowAsHeader: true) ~> source1\nsource1 select(skipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> Select1\nsource1 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sink1"
+			"script": "parameters{\n\tdata_1 as string,\n\tdata_2 as string\n}\nsource(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tformat: 'excel',\n\tcontainer: 'vicocontainer2020',\n\tfileName: 'miLista.xlsx',\n\tsheetName: 'Sheet1',\n\tfirstRowAsHeader: true) ~> source1\nsource1 select(skipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> Select1\nsource1 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sink1"
 		}
 	}
 }
